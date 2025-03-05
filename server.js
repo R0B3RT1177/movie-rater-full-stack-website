@@ -101,6 +101,9 @@ app.post("/userhandler", async function(req, res) {
   let correct_info = false;
   
   var users = await db.checkUsers();
+  if (!users){
+    users = [];
+  };
 
   var input_user = String(req.body.username);
   var hashed_pass = crypto.createHash('md5').update(req.body.password).digest('hex');
