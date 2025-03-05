@@ -27,6 +27,11 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // ------------------------------------------------------------------------------
 
+// handle errors
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("Unhandled Promise Rejection:", reason);
+});
+
 // middleware to check if user is logged in. If they aren't, redirect them to the login page
 function isLoggedIn (req, res, next){
   if (req.session.user){
