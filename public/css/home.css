@@ -1,3 +1,4 @@
+/* for the div where all of the individual reviews reside */
 .movieReviews {
   width: 80%;
   margin: 0 auto;
@@ -8,6 +9,7 @@
   align-items: center;
 }
 
+/* for each review box looking thing */
 .reviewContainer {
   background-color: #F7F7F7;
   width: 90%;
