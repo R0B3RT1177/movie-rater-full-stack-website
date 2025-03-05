@@ -27,11 +27,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // ------------------------------------------------------------------------------
 
-// handle errors
-process.on("unhandledRejection", (reason, promise) => {
-  console.error("Unhandled Promise Rejection:", reason);
-});
-
 // middleware to check if user is logged in. If they aren't, redirect them to the login page
 function isLoggedIn (req, res, next){
   if (req.session.user){
@@ -172,10 +167,8 @@ app.get("/search/:search_term", async function(req, res){
     var rating = String(review.Rating).toLowerCase();
     var textual_review = review.TextualReview.toLowerCase();
     var search_term = req.params.search_term.toLowerCase();
-    console.log(review.MovieName, req.params.search_term)
-    console.log(reviewer_name.includes(search_term) || date.includes(search_term) || movie_name.includes(search_term) || rating.includes(search_term) || textual_review.includes(search_term));
+
     if (reviewer_name.includes(search_term) || date.includes(search_term) || movie_name.includes(search_term) || rating.includes(search_term) || textual_review.includes(search_term)){
-      console.log("EeEEEEEEEEEEEEEE")
       valid_reviews.push(review);
     };
   });
