@@ -72,6 +72,11 @@ app.get("/review", isLoggedIn, function(req, res) {
 // this handles the signup stuff in the backend
 app.post("/createuser", async function(req, res) {
   var existing_users = await db.checkUsers();
+
+  if (!existing_users){
+    existing_users = [];
+  };
+  
   var duplicated_username = false;
   
 // pass the password through a hashing function for security
@@ -101,6 +106,7 @@ app.post("/userhandler", async function(req, res) {
   let correct_info = false;
   
   var users = await db.checkUsers();
+  
   if (!users){
     users = [];
   };
