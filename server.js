@@ -12,7 +12,7 @@ app.use(session({
   secret: 'bingchilling',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
+  cookie: { secure: false }
 }));
 
 const path = require("path");
