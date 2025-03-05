@@ -1,0 +1,115 @@
+.reviewBox {
+/*   border: dotted red 2px; */
+  
+  margin: 10% auto;
+  padding-top: 3em;
+  padding-right: 2em;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #F0F0F0;
+  box-shadow: 5px 10px #BABABA;
+  border-radius: 5px;
+}
+
+.inputField {
+/*   border: dotted green 2px; */
+
+  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  height: 30px;
+  font-size: 13px;
+}
+
+.inputField label{
+/*   border: dotted cyan 2px; */
+  
+  white-space: nowrap;
+  color: #606060;
+}
+
+.inputField input{
+/*   border: dotted blue 2px; */
+  
+  width: 60%;
+  background-color: #FDFDFD;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  color: #606060;
+  margin-left: 1em;
+}
+
+.starRating {
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.star {
+  width: 15px;
+  margin: 5px auto;
+}
+
+.bigInputField {
+/*   border: dotted green 2px; */
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  font-size: 13px;
+}
+
+.bigInputField label{
+/*   border: dotted cyan 2px; */
+  
+  color: #606060;
+}
+
+.bigInputField textarea{
+/*   border: dotted blue 2px; */
+  
+  background-color: #FDFDFD;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  margin-top: 0.5em;
+  color: #606060;
+}
+
+.formFinalButton {
+/*   border: dotted lime 2px; */
+  
+  width: 100%;
+  text-align: left;
+  align-self: flex-end;
+  margin-bottom: 5%;
+  margin-left: 2em;
+}
+
+.formFinalButton input {
+  background-color: #5398BE;
+  border: solid #5398BE;
+  color: #FDFDFD;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.formFinalButton input:hover {
+  background-color: #4893B9;
+  border: solid #4893B9;
+  color: #F7F7F7;
+}
+
+/* For small screens, specifically when the stars start to wrap around */
+@media only screen and (max-width: 580px) {
+  .reviewBox {
+    width: 80%;
+  }
+}

@@ -1,0 +1,110 @@
+.formBox {
+  margin: 10% auto;
+  padding-top: 3em;
+  width: 60%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F0F0F0;
+  box-shadow: 5px 10px #BABABA;
+  border-radius: 5px;
+}
+
+.inputField {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.inputField label{
+  color: #606060;
+  width: 35%;
+}
+
+.inputField input{
+  background-color: #FDFDFD;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  color: #606060;
+  margin-left:5%;
+  width: 60%;
+}
+
+.formFinalButton {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.formFinalButton input {
+  background-color: #5398BE;
+  border: solid #5398BE;
+  color: #FDFDFD;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.formFinalButton input:hover {
+  background-color: #4893B9;
+  border: solid #4893B9;
+  color: #F7F7F7;
+}
+
+.signupButton {
+  width:100%;
+  text-align:center;
+  background-color: #212529;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 5px;
+}
+
+.signupButton a button {
+  background-color: #5398BE;
+  border: solid #5398BE;
+  color: #FDFDFD;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+.signupButton a button:hover {
+  background-color: #4893B9;
+  border: solid #4893B9;
+  color: #F7F7F7;
+}
+
+.errorMessage {
+  color: #F8575A;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* For small width screens */
+@media only screen and (max-width: 500px) {
+  .formBox {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .formFinalButton input {
+    width: 90%;
+  }
+  .inputField {
+    margin: 10% auto;
+  }
+}
+
+/* For small height screens */
+
+@media only screen and (max-height: 500px) {
+  
+  }
+}

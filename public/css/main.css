@@ -1,0 +1,12 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  background-color: #FBFBFB;
+  margin:0;
+}
+
+nav {
+  box-shadow: 5px 5px #BABABA;
+}

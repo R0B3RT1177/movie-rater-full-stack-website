@@ -1,0 +1,48 @@
+.movieReviews {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewContainer {
+  background-color: #F7F7F7;
+  width: 90%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  box-shadow: 5px 5px #CACACA;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.userAndDate {
+  width: 100%;
+}
+
+.reviewItem {
+  margin-right: 1em;
+}
+
+.starRating {
+  cursor: pointer;
+}
+
+.star {
+  width: 15px;
+  margin: 5px auto;
+}
+
+.textualReview {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.form-inline {
+  margin-top: auto;
+  margin-bottom: auto;
+}
