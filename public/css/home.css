@@ -22,28 +22,29 @@
   flex-wrap: wrap;
 }
 
+/* for the "posted by ___" part of the review, just so it does not wrap like the other elements */
 .userAndDate {
   width: 100%;
 }
 
+/* styling for every review item (movie name, star rating, textual review) */
 .reviewItem {
   margin-right: 1em;
 }
 
-.starRating {
-  cursor: pointer;
-}
-
+/* for the star rating stars */
 .star {
   width: 15px;
   margin: 5px auto;
 }
 
+/* for textual review */
 .textualReview {
   margin-top: 1em;
   width: 100%;
 }
 
+/* so that the bootsrap search bar aligns properly in the navbar */
 .form-inline {
   margin-top: auto;
   margin-bottom: auto;
