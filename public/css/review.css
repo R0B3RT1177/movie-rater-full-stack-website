@@ -1,6 +1,5 @@
+/* styling for the review form */
 .reviewBox {
-/*   border: dotted red 2px; */
-  
   margin: 10% auto;
   padding-top: 3em;
   padding-right: 2em;
@@ -15,8 +14,6 @@
 }
 
 .inputField {
-/*   border: dotted green 2px; */
-
   max-width: 350px;
   display: flex;
   flex-direction: row;
@@ -28,15 +25,11 @@
 }
 
 .inputField label{
-/*   border: dotted cyan 2px; */
-  
   white-space: nowrap;
   color: #606060;
 }
 
 .inputField input{
-/*   border: dotted blue 2px; */
-  
   width: 60%;
   background-color: #FDFDFD;
   border: 1px solid #707070;
@@ -56,8 +49,6 @@
 }
 
 .bigInputField {
-/*   border: dotted green 2px; */
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,14 +58,10 @@
 }
 
 .bigInputField label{
-/*   border: dotted cyan 2px; */
-  
   color: #606060;
 }
 
 .bigInputField textarea{
-/*   border: dotted blue 2px; */
-  
   background-color: #FDFDFD;
   border: 1px solid #707070;
   border-radius: 3px;
@@ -83,8 +70,6 @@
 }
 
 .formFinalButton {
-/*   border: dotted lime 2px; */
-  
   width: 100%;
   text-align: left;
   align-self: flex-end;
