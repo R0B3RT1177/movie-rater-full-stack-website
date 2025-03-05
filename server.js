@@ -138,7 +138,8 @@ app.post("/reviewhandler", async function(req, res) {
   res.redirect('/');
 });
 
-app.post("/searchhandler", async function(req, res) {
+// for handling post requests for searches. It simply redirects them to a url with a route parameter with their search term
+app.post("/searchhandler", function(req, res) {
   var search_term = req.body.search;
   if (search_term == null) {
     search_term = "";
@@ -146,6 +147,7 @@ app.post("/searchhandler", async function(req, res) {
   res.redirect(`/search/${search_term}`);
 });
 
+// handles searching for reviews. Loop through each review and see if any of its data have the search term inside of them. If they do, dispaly that review.
 app.get("/search/:search_term", async function(req, res){
   var valid_reviews = [];
   var reviews = await db.checkReviews();
