@@ -1,0 +1,28 @@
+{
+  "name": "full-stack-app-example-csc450",
+  "version": "0.0.1",
+  "description": "A basic example of a full-stack app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "express": "^4.0",
+    "ejs": "^3.1.10",
+    "morgan": "^1.10.0",
+    "crypto-js": "^4.2.0",
+    "express-session": "^1.18.1",
+    "bootstrap": "^5.3.3"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "sqlite"
+  ]
+}
