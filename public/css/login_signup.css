@@ -1,3 +1,4 @@
+/* for the login/signup forms */
 .formBox {
   margin: 10% auto;
   padding-top: 3em;
@@ -55,6 +56,7 @@
   color: #F7F7F7;
 }
 
+/* for only the login page */
 .signupButton {
   width:100%;
   text-align:center;
@@ -80,6 +82,7 @@
   color: #F7F7F7;
 }
 
+/* login/signup error message (eg. wrong username/password) styling */
 .errorMessage {
   color: #F8575A;
   font-weight: bold;
@@ -99,12 +102,5 @@
   }
   .inputField {
     margin: 10% auto;
-  }
-}
-
-/* For small height screens */
-
-@media only screen and (max-height: 500px) {
-  
   }
 }
